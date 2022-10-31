@@ -13,6 +13,6 @@ struct RiotAPI {
     }
 
     static func matchInfomations(by puuid: String) {
-        
+
     }
 }
