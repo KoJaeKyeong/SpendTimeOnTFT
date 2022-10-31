@@ -8,9 +8,20 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
     }
 }
 
+private extension SearchViewController {
+    func configure() {
+        configureViews()
+    }
+
+    func configureViews() {
+        searchBar.placeholder = "소환사명을 입력해주세요."
+    }
+}
