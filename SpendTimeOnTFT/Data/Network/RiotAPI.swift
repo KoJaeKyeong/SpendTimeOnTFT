@@ -8,11 +8,11 @@
 import Foundation
 
 struct RiotAPI {
-    static func summonerInfomation(by name: String) {
+    static func summonerInfo(by name: String) {
 
     }
 
-    static func matchInfomations(by puuid: String) {
+    static func matchInfo(by puuid: String) {
 
     }
 }
