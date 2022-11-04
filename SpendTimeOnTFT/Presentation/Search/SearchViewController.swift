@@ -14,6 +14,17 @@ final class SearchViewController: UIViewController {
         super.viewDidLoad()
         configure()
     }
+
+    private func showAlert() {
+        let alertController = UIAlertController(title: nil,
+                                                message: "소환사명을 입력해주세요",
+                                                preferredStyle: .alert)
+        let action = UIAlertAction(title: "확인", style: .cancel)
+
+        alertController.addAction(action)
+
+        present(alertController, animated: true)
+    }
 }
 
 private extension SearchViewController {
@@ -43,7 +54,7 @@ extension SearchViewController: UISearchBarDelegate {
 
             present(viewController, animated: true)
         } else {
-            // TODO: Alert 보여주기
+            showAlert()
         }
     }
 }
