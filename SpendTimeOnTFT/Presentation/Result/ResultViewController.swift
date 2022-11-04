@@ -8,6 +8,7 @@
 import UIKit
 
 final class ResultViewController: UIViewController {
+    var summonerName: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
