@@ -8,5 +8,7 @@
 import Foundation
 
 struct MatchRepository {
-
+    static func requestMatchInfo(by name: String) async throws -> [String]? {
+        return try await RiotAPI.requestMatchInfo(by: name)
+    }
 }
